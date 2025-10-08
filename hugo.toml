@@ -1,0 +1,34 @@
+baseURL = 'https://kadraman.github.io/'
+languageCode = 'en-us'
+title = 'kadraman'
+theme = 'ananke'
+
+[params]
+  description = "kadraman portfolio and blog"
+  author = "kadraman"
+  favicon = ""
+  site_logo = ""
+  
+  # Homepage content
+  intro = true
+  headline = "Welcome to kadraman's Portfolio & Blog"
+  description_text = "Explore my projects, thoughts, and technical journey."
+
+[params.ananke_socials]
+  github = "https://github.com/kadraman"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
